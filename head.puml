@@ -3,6 +3,8 @@
 
 !$origin_url = $gitee_origin
 
+!$head_url = $origin_url + "head.puml"
+
 !$c4_url = $origin_url + "c4/C4.puml"
 !$c4_context_url = $origin_url + "c4/C4_Context.puml"
 !$c4_container_url = $origin_url + "c4/C4_Container.puml"

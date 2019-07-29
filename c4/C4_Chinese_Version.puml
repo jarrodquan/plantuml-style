@@ -1,4 +1,4 @@
-!include ../head.puml
+!includeurl https://gitee.com/jarrodquan/plantuml-style/raw/master/head.puml
 !includeurl $c4_component_url
 
 skinparam roundcorner 20

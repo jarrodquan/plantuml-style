@@ -1,4 +1,4 @@
-!include ../head.puml
+!includeurl https://gitee.com/jarrodquan/plantuml-style/raw/master/head.puml
 !includeurl $style_material_colors_url
 
 ' uncomment the following line and comment the first to use locally

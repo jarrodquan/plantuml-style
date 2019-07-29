@@ -1,10 +1,5 @@
-@startuml override-skin
-!includeurl https://raw.githubusercontent.com/xuanye/plantuml-style-c4/master/colors.puml
-' uncomment the following line and comment the first to use locally
-'!include colors.puml
-
-
-
+!includeurl https://gitee.com/jarrodquan/plantuml-style/raw/master/head.puml
+!includeurl $style_colors_url
 
 skinparam wrapWidth 200
 skinparam maxMessageSize 150
