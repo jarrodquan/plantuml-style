@@ -1,0 +1,18 @@
+!$local_origin = "../"
+!$github_origin = "https://raw.githubusercontent.com/jarrodquan/plantuml-style/master/"
+!$gitee_origin = "https://gitee.com/jarrodquan/plantuml-style/raw/master/"
+
+!$origin_url = $local_origin
+
+!$c4_url = $origin_url + "c4/C4.puml"
+!$c4_context_url = $origin_url + "c4/C4_Context.puml"
+!$c4_container_url = $origin_url + "c4/C4_Container.puml"
+!$c4_component_url = $origin_url + "c4/C4_Component.puml"
+!$c4_chinese_version_url = $origin_url + "c4/C4_Chinese_Version.puml"
+
+!$style_c4_theme_url = $origin_url + "style/c4_theme.puml"
+!$style_class_diagram_helper_url = $origin_url + "style/class_diagram_helper.puml"
+!$style_colors_url = $origin_url + "style/colors.puml"
+!$style_core_url = $origin_url + "style/core.puml"
+!$style_material_colors_url = $origin_url + "style/material_colors.puml"
+!$style_skinparam_url = $origin_url + "style/skinparam.puml"

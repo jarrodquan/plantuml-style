@@ -1,0 +1,128 @@
+!include ../head.puml
+!includeurl $c4_component_url
+
+skinparam roundcorner 20
+skinparam backgroundColor #EEEBDC
+
+' ##################################
+' Styling
+' ##################################
+' Top
+skinparam rectangle<<边界>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+!define Boundary(e_alias, e_label) rectangle "==e_label" <<边界>> as e_alias
+!define Boundary(e_alias, e_label, e_type) rectangle "==e_label\n<size:TECHN_FONT_SIZE>[e_type]</size>" <<边界>> as e_alias
+
+' Context
+skinparam rectangle<<人员>> {
+    StereotypeFontColor ELEMENT_FONT_COLOR
+    FontColor ELEMENT_FONT_COLOR
+    BackgroundColor PERSON_BG_COLOR
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<外部人员>> {
+    StereotypeFontColor ELEMENT_FONT_COLOR
+    FontColor ELEMENT_FONT_COLOR
+    BackgroundColor EXTERNAL_PERSON_BG_COLOR
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<系统>> {
+    StereotypeFontColor ELEMENT_FONT_COLOR
+    FontColor ELEMENT_FONT_COLOR
+    BackgroundColor SYSTEM_BG_COLOR
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<外部系统>> {
+    StereotypeFontColor ELEMENT_FONT_COLOR
+    FontColor ELEMENT_FONT_COLOR
+    BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
+    BorderColor #8A8A8A
+}
+
+skinparam database<<系统>> {
+    StereotypeFontColor ELEMENT_FONT_COLOR
+    FontColor ELEMENT_FONT_COLOR
+    BackgroundColor SYSTEM_BG_COLOR
+    BorderColor #3C7FC0
+}
+
+skinparam database<<外部系统>> {
+    StereotypeFontColor ELEMENT_FONT_COLOR
+    FontColor ELEMENT_FONT_COLOR
+    BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
+    BorderColor #8A8A8A
+}
+
+!define Person(e_alias, e_label) rectangle "==e_label" <<人员>> as e_alias
+!define Person(e_alias, e_label, e_descr) rectangle "==e_label\n\n e_descr" <<人员>> as e_alias
+
+!define Person_Ext(e_alias, e_label) rectangle "==e_label" <<外部人员>> as e_alias
+!define Person_Ext(e_alias, e_label, e_descr) rectangle "==e_label\n\n e_descr" <<外部人员>> as e_alias
+
+!define System(e_alias, e_label) rectangle "==e_label" <<系统>> as e_alias
+!define System(e_alias, e_label, e_descr) rectangle "==e_label\n\n e_descr" <<系统>> as e_alias
+
+!define System_Ext(e_alias, e_label) rectangle "==e_label" <<外部系统>> as e_alias
+!define System_Ext(e_alias, e_label, e_descr) rectangle "==e_label\n\n e_descr" <<外部系统>> as e_alias
+
+!define SystemDb(e_alias, e_label) database "==e_label" <<系统>> as e_alias
+!define SystemDb(e_alias, e_label, e_descr) database "==e_label\n\n e_descr" <<系统>> as e_alias
+
+!define SystemDb_Ext(e_alias, e_label) database "==e_label" <<外部系统>> as e_alias
+!define SystemDb_Ext(e_alias, e_label, e_descr) database "==e_label\n\n e_descr" <<外部系统>> as e_alias
+
+!define Enterprise_Boundary(e_alias, e_label) Boundary(e_alias, e_label, "企业")
+!define System_Boundary(e_alias, e_label) Boundary(e_alias, e_label, "系统")
+
+' Container
+skinparam rectangle<<容器>> {
+    StereotypeFontColor ELEMENT_FONT_COLOR
+    FontColor ELEMENT_FONT_COLOR
+    BackgroundColor CONTAINER_BG_COLOR
+    BorderColor #3C7FC0
+}
+
+skinparam database<<容器>> {
+    StereotypeFontColor ELEMENT_FONT_COLOR
+    FontColor ELEMENT_FONT_COLOR
+    BackgroundColor CONTAINER_BG_COLOR
+    BorderColor #3C7FC0
+}
+
+!define Container(e_alias, e_label, e_techn) rectangle "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<容器>> as e_alias
+!define Container(e_alias, e_label, e_techn, e_descr) rectangle "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<容器>> as e_alias
+
+!define ContainerDb(e_alias, e_label, e_techn) database "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<容器>> as e_alias
+!define ContainerDb(e_alias, e_label, e_techn, e_descr) database "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<容器>> as e_alias
+
+!define Container_Boundary(e_alias, e_label) Boundary(e_alias, e_label, "容器")
+
+' Component
+skinparam rectangle<<组件>> {
+    StereotypeFontColor ELEMENT_FONT_COLOR
+    FontColor #000000
+    BackgroundColor COMPONENT_BG_COLOR
+    BorderColor #78A8D8
+}
+
+skinparam database<<组件>> {
+    StereotypeFontColor ELEMENT_FONT_COLOR
+    FontColor #000000
+    BackgroundColor COMPONENT_BG_COLOR
+    BorderColor #78A8D8
+}
+
+!define Component(e_alias, e_label, e_techn) rectangle "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<组件>> as e_alias
+!define Component(e_alias, e_label, e_techn, e_descr) rectangle "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<component>> as e_alias
+
+!define ComponentDb(e_alias, e_label, e_techn) database "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<组件>> as e_alias
+!define ComponentDb(e_alias, e_label, e_techn, e_descr) database "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<component>> as e_alias

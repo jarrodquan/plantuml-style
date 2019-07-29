@@ -1,0 +1,11 @@
+@startuml test
+!includeurl https://gitee.com/jarrodquan/plantuml-style/raw/master/head.puml
+
+$origin_url = "https://gitee.com/jarrodquan/plantuml-style/raw/master/"
+
+!includeurl $style_core_url
+!includeurl $c4_chinese_version_url
+
+A -> B: 调用
+System(core, "核心")
+@enduml
