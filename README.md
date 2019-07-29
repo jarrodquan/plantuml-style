@@ -6,3 +6,7 @@
 
 ## 用法
 请看Starter template。
+
+## 展示
+![Starter template](./showcase/starter_template.svg)
+![Starter template C4](./showcase/starter_template_c4.svg)

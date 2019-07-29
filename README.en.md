@@ -6,3 +6,7 @@ I just aggregated these two projects and added some Chinese support and origin s
 
 ## Usage
 Please see starter template.
+
+## Showcase
+![Starter template](./showcase/starter_template.svg)
+![Starter template C4](./showcase/starter_template_c4.svg)

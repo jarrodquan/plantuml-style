@@ -1,4 +1,4 @@
-@startuml Starter template
+@startuml starter_template
 ' 在中国用gitee源，否则用github源
 ' Use gitee origin in China, otherwise use github origin
 !$gitee_origin = "https://gitee.com/jarrodquan/plantuml-style/raw/master/"
