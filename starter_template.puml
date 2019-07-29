@@ -7,8 +7,8 @@
 !$head_url = $origin_url + "head.puml"
 
 !include $head_url
-!include $style_core_url
 !includeurl $c4_chinese_version_url
+!includeurl $style_core_url
 
 title PlantUML Style
 right header Jarrod Quan

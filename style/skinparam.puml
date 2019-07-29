@@ -281,6 +281,3 @@ skinparam rectangle<<usercase>> {
     BorderStyle dashed
     BackgroundColor White
 }
-
-
-@enduml
