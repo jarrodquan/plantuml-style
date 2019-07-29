@@ -2,10 +2,17 @@
 !$gitee_origin = "https://gitee.com/jarrodquan/plantuml-style/raw/master/"
 !$github_origin = "https://raw.githubusercontent.com/jarrodquan/plantuml-style/master/"
 
+' Must define variable: origin_url, head_url
 !$origin_url = $gitee_origin
+!$head_url = $origin_url + "head.puml"
 
-!include ./head.puml
+!include $head_url
+' !include $style_core_url
 !includeurl $c4_chinese_version_url
+
+title PlantUML Style
+right header Jarrod Quan
+footer © 2019 Jarrod Quan All Rights Reversed
 
 A -> B: 调用
 System(core, "核心")

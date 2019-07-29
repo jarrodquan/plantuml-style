@@ -1,4 +1,4 @@
-!includeurl https://gitee.com/jarrodquan/plantuml-style/raw/master/head.puml
+!includeurl $head_url
 !includeurl $c4_container_url
 
 ' uncomment the following line and comment the first to use locally
