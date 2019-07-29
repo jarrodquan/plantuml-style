@@ -1,13 +1,13 @@
 @startuml Starter template C4
-!$github_origin = "https://raw.githubusercontent.com/jarrodquan/plantuml-style/master/"
+' 在中国用gitee源，否则用github源
+' Use gitee origin in China, otherwise use github origin
 !$gitee_origin = "https://gitee.com/jarrodquan/plantuml-style/raw/master/"
+!$github_origin = "https://raw.githubusercontent.com/jarrodquan/plantuml-style/master/"
 
 ' 必须定义的变量：origin_url，head_url
 ' Variable that must be defined: origin_url, head_url
 !$origin_url = $gitee_origin
 !$head_url = $origin_url + "head.puml"
-
-!include $head_url
 
 ' 必须包含的引用：head_url
 ' Reference that must be included: head_url
