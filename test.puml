@@ -1,6 +1,5 @@
 @startuml test
-!includeurl https://gitee.com/jarrodquan/plantuml-style/raw/master/head.puml
-!includeurl $style_core_url
+!include ./head.puml
 !includeurl $c4_chinese_version_url
 
 A -> B: 调用
