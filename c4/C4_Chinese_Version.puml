@@ -2,7 +2,6 @@
 !includeurl $c4_component_url
 
 skinparam roundcorner 20
-skinparam backgroundColor #EEEBDC
 
 ' ##################################
 ' Styling

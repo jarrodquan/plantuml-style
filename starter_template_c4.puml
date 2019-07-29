@@ -1,4 +1,4 @@
-@startuml Starter template
+@startuml Starter template C4
 !$github_origin = "https://raw.githubusercontent.com/jarrodquan/plantuml-style/master/"
 !$gitee_origin = "https://gitee.com/jarrodquan/plantuml-style/raw/master/"
 
@@ -7,21 +7,23 @@
 !$origin_url = $gitee_origin
 !$head_url = $origin_url + "head.puml"
 
-' 必须包含的引用：head_url
-' Reference that must be included: head_url
 !include $head_url
 
-' 可选的引用
-' Optional reference
-!includeurl $style_core_url
+' 必须包含的引用：head_url
+' Reference that must be included: head_url
+' 英文版：替换“!includeurl $c4_chinese_version_url”为“!includeurl $c4_component_url”
+' English version: Replace "!includeurl $c4_chinese_version_url" to "!includeurl $c4_component_url"
+!include $head_url
+!includeurl $c4_chinese_version_url
 
-title Sequence Diagram
+title PlantUML for C4
 right header [Your name/Company name]
 footer © 2019 [Your name/Company name] All Rights Reversed
 
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
+System(system, "XXX智能化系统", "提供各类信息管理服务")
+Person(member, "普通用户")
+Person(admin, "管理员")
 
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+Rel(member, system, "浏览器")
+Rel(admin, system, "浏览器")
 @enduml
