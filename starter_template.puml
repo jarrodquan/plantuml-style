@@ -1,4 +1,4 @@
-@startuml test
+@startuml Starter template
 !$gitee_origin = "https://gitee.com/jarrodquan/plantuml-style/raw/master/"
 !$github_origin = "https://raw.githubusercontent.com/jarrodquan/plantuml-style/master/"
 
@@ -7,13 +7,21 @@
 !$head_url = $origin_url + "head.puml"
 
 !include $head_url
-' !include $style_core_url
+!include $style_core_url
 !includeurl $c4_chinese_version_url
 
 title PlantUML Style
 right header Jarrod Quan
 footer © 2019 Jarrod Quan All Rights Reversed
 
+System(system, "XXX智能化系统", "提供各类信息管理服务")
+Person(member, "普通用户")
+Person(admin, "管理员")
+
+Rel(member, system, "浏览器")
+Rel(admin, system, "浏览器")
+
 A -> B: 调用
-System(core, "核心")
+B -> C: 调用
+C -> A: 回调
 @enduml
