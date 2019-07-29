@@ -1,8 +1,3 @@
-!$github_origin = "https://raw.githubusercontent.com/jarrodquan/plantuml-style/master/"
-!$gitee_origin = "https://gitee.com/jarrodquan/plantuml-style/raw/master/"
-
-!$origin_url = $gitee_origin
-
 !$head_url = $origin_url + "head.puml"
 
 !$c4_url = $origin_url + "c4/C4.puml"
