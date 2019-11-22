@@ -1,20 +1,5 @@
 @startuml starter_template_c4
-' 在中国用gitee源，否则用github源
-' Use gitee origin in China, otherwise use github origin
-!$gitee_origin = "https://gitee.com/jarrodquan/plantuml-style/raw/master/"
-!$github_origin = "https://raw.githubusercontent.com/jarrodquan/plantuml-style/master/"
-
-' 必须定义的变量：origin_url，head_url
-' Variable that must be defined: origin_url, head_url
-!$origin_url = $gitee_origin
-!$head_url = $origin_url + "head.puml"
-
-' 必须包含的引用：head_url
-' Reference that must be included: head_url
-' 英文版：替换“!includeurl $c4_chinese_version_url”为“!includeurl $c4_component_url”
-' English version: Replace "!includeurl $c4_chinese_version_url" to "!includeurl $c4_component_url"
-!include $head_url
-!includeurl $c4_chinese_version_url
+!include c4/C4_Chinese_Version.puml
 
 title PlantUML for C4
 right header [Your name/Company name]

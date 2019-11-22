@@ -1,5 +1,4 @@
-!includeurl $head_url
-!includeurl $c4_component_url
+!include C4_Component.puml
 
 skinparam roundcorner 20
 

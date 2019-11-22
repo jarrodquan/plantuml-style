@@ -1,5 +1,4 @@
-!includeurl $head_url
-!includeurl $c4_context_url
+!include C4_Context.puml
 
 ' uncomment the following line and comment the first to use locally
 ' !include C4_Context.puml

@@ -1,5 +1,4 @@
-!includeurl $head_url
-!includeurl $style_material_colors_url
+!includeurl material_colors.puml
 
 ' uncomment the following line and comment the first to use locally
 '!include  material-colors.puml

@@ -1,5 +1,4 @@
-!includeurl $head_url
-!includeurl $style_colors_url
+!includeurl colors.puml
 
 skinparam wrapWidth 200
 skinparam maxMessageSize 150

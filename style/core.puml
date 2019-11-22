@@ -1,6 +1,5 @@
-!includeurl $head_url
-!includeurl $style_colors_url
-!includeurl $style_skinparam_url
+!includeurl colors.puml
+!includeurl skinparam.puml
 
 !define TECHN_FONT_SIZE 12
 
