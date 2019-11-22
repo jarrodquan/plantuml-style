@@ -10,3 +10,6 @@
 ## 展示
 ![Starter template](./showcase/starter_template.svg)
 ![Starter template C4](./showcase/starter_template_c4.svg)
+
+## 本地版
+请使用local分支。
